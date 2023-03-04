@@ -20,8 +20,8 @@ body {
   gap: 80px;
 }
 .card {
-  width: 300px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
   transition: 0.3s;
 }
 .card:hover {
@@ -54,9 +54,21 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  width: 100%;
+}
+.front::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(65deg, rgb(39, 205, 255), rgb(192, 159, 51));
+  opacity: 30%;
+  border-radius: inherit;
 }
 .front::before {
-  background-image: url(Images/pexels-pixabay-221307.jpg);
+  background-image: url(Images/economy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -68,12 +80,22 @@ body {
   display: block;
   border-radius: 15px;
   backface-visibility: hidden;
-  filter: grayscale(2);
+  filter: grayscale(1);
   transition: 0.3s;
+}
+
+#Business .front::before {
+  background-image: url(Images/business_class.jpg);
+}
+#firstClass .front::before {
+  background-image: url(Images/firstclass.jpg);
 }
 
 .front:hover::before {
   filter: grayscale(0);
+}
+.front:hover::after {
+  opacity: 12%;
 }
 .back {
   display: flex;
@@ -146,7 +168,6 @@ p {
 }
 .check-list {
   margin: 0;
-  padding-left: 0.2rem;
   align-self: flex-end;
   padding-top: 30px;
   transform: translateZ(60px);
@@ -160,7 +181,7 @@ p {
   margin-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 0.02rem;
-  font-size: 22px;
+  font-size: 24px;
   color: #ffff;
   -webkit-text-stroke: 0.2px black;
 }
