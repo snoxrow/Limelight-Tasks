@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+
+:root {
+  --font: "Delicious Handrawn", cursive;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow-x: hidden;
+  
+  background: linear-gradient(
+    173deg,
+    rgba(173, 28, 179,1) 30%,
+    rgba(83, 83, 175, 1) 69%
+  );
+  background-attachment:fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  font-family: var(--font);
+  height: 160px;
+  position: relative;
+  width: 1440px;
+}
+nav img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+}
+
+h1 {
+  font-size: 60px;
+  color: rgb(83, 83, 175);
+}
+
+a {
+  text-decoration: none;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.349);
+  transition: all 0.3s;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+#sucre {
+  color: rgb(250, 152, 253);
+}
+
+.img-wrapper img {
+  height: 550px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-wrapper {
+  display: grid;
+  place-items: center;
+  width: 1440px;
+  height: 550px;
+}
+
+.img-container {
+  display: flex;
+  width: 1050px;
+}
+
+.candies {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#candy1 {
+  transform: translateX(-100px) translateY(260px) rotate(-45deg);
+}
+#candy2 {
+  height: 500px;
+  transform: translateX(1400px) translateY(1300px) rotate(-35deg);
+}
+#candy3 {
+  transform: translateX(-500px) translateY(1400px);
+}
+#candy4 {
+  transform: translateX(500px) translateY(1200px);
+}
+
+.menu h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.menu {
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  font-family: var(--font);
+}
+
+p {
+  font-size: 24px;
+}
